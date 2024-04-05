@@ -11,7 +11,7 @@ app.use(express.static(publicDirectoryPath));
 
 // Serve index.html for the root URL
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(publicDirectoryPath, 'index.html'));
 });
 
 // Start the server
